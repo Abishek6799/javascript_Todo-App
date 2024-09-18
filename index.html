@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconarchive.com/download/i94052/scafer31000/bubble-circle-3/Calculator.1024.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Income Expense Calculator</title>
+  </head>
+  <body>
+    <div class="boxcontainer">
+      <div>
+        <h1>Income Expense Calculator</h1>
+      </div>
+      <div id="total">
+        <div id="netbox" class="totalbox">
+          <h2>Net Balance <span id="netBal"> ₹ 0.00</span></h2>
+          
+        </div>
+        <div id="totalincome" class="totalbox">
+          <h2>Total Income <span id="incomeBal"> ₹ 0.00</span></h2>
+          
+        </div>
+        <div id="totalexp" class="totalbox">
+          <h2>Total Expenses &nbsp; &nbsp;&nbsp; <span id="expBal"> ₹ 0.00</span></h2>
+          
+        </div>
+      </div>
+      <div class="filters">
+            <p>
+            <input type="radio" name="filter" id="all" value="all" checked>
+            <label for="all">All</label>
+            </p>
+            <p>
+            <input type="radio" name="filter" id="income" value="income">
+            <label for="income">Income</label>
+            </p>
+            <p>
+            <input type="radio" name="filter" id="expense" value="expense">
+            <label for="expense">Expense</label>
+            </p> 
+        </div>
+        <div>
+          <div class="form hide" id="incomevalue">
+            <div class="input" id="des">
+                <label for="description">Description:</label>
+                <input type="text" id="description" placeholder="Enter Description" required/>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="₹ 0.00" required/>
+                <button type="submit" id="addData">Add Data</button>
+            </div>        
+          </div>
+          
+        </div>  
+        <div>
+          <ul id="list"></ul>
+        </div>                      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
